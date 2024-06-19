@@ -77,4 +77,21 @@ public void ex03(){
         }     
     }
 }
+
+public void ex04(){
+    int idade;
+
+    System.out.println("Insira sua idade:");
+    idade = scanner.nextInt();
+
+    if (idade >= 18){
+        System.out.println("Você pode entrar!");
+    }
+    else if (idade <18 && idade >= 16){
+        System.out.println("Você só pode entrar acompanhado(a) por seus responsáveis.");
+    } else {
+        System.out.println("Você não pode entrar.");
+    }
+}
+
 }
