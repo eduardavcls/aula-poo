@@ -94,4 +94,31 @@ public void ex04(){
     }
 }
 
+public void ex05(){
+String login = "Admin";
+String loginInserido;
+int senha = 1234;
+int senhaInserida;
+boolean logado = false;
+
+while (!logado){
+System.out.println("Insira seu login:");
+loginInserido = scanner.nextLine();
+
+if (login.equals(loginInserido)){
+    System.out.println("Digite sua senha:");
+    senhaInserida = scanner.nextInt();
+    if (senha == senhaInserida){
+        System.out.println("Acesso Permitido!");
+        logado = true;
+    }else {
+        System.out.println("Senha incorreta, tente novamente.\n\n\n\n");
+    }
+} else {
+    System.out.println("Login Invalido, tente novamente.\n\n\n");
+ }
+ }
+}
+
+
 }
