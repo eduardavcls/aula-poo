@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Lista2 {
 Scanner scanner = new Scanner (System.in);
- public void ex01(){
+public void ex01(){
     
     int numeroDigitado;
     
@@ -20,7 +20,7 @@ Scanner scanner = new Scanner (System.in);
      }
   }
 
-  public void ex02(){
+public void ex02(){
  
     int numeroDigitado1;
     int numeroDigitado2;
@@ -43,4 +43,38 @@ Scanner scanner = new Scanner (System.in);
 
 }
 
+public void ex03(){
+    int respostaGestante;
+    int respostaPCD;
+    int respostaIdoso;
+    int preferencial = 0;
+
+
+    while (preferencial < 1){
+
+        System.out.println("Boa noite, iremos fazer umas perguntas para encaminha-lo para sua fila de atendimento.\n\n Você é gestante?\n 1 - Sim \n 2 - Não");
+        respostaGestante = scanner.nextInt();
+
+        if (respostaGestante == 1){
+            preferencial++;
+            break;
+        }
+
+        System.out.println("Você é PCD? \n 1 - Sim \n 2 - Não");
+        respostaPCD = scanner.nextInt();
+
+        if (respostaPCD == 1){
+            preferencial++;
+            break;
+        }
+
+        System.out.println("Você tem mais de 65 anos? \n 1 - Sim \n 2 - Não ");
+        respostaIdoso = scanner.nextInt();
+
+        if (respostaIdoso == 1){
+            preferencial++;
+            break;
+        }     
+    }
+}
 }
