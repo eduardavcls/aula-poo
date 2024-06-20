@@ -31,7 +31,7 @@ if (segundos < 1 || segundos > 59) {
 timer.scheduleAtFixedRate(tarefa, 0, 1000);
  }
 
- public void ex02(){
+public void ex02(){
     Scanner scanner = new Scanner(System.in);
     int numeroDigitado;
     int multiplicador;
@@ -49,8 +49,31 @@ timer.scheduleAtFixedRate(tarefa, 0, 1000);
       scanner.close();  
     }
     }
-  }  
 
+public void ex03(){
+Scanner scanner = new Scanner(System.in);
+
+int numero1;
+int numero2;
+
+System.out.println("Digite o primeiro número:");
+numero1 = scanner.nextInt();
+ 
+System.out.println("Digite o segundo número:");
+numero2 = scanner.nextInt();
+
+for (int numero = numero1; numero <= numero2; numero++) {
+  if (numero % 2 == 0) {
+      System.out.print(" " + numero);
+
+  }
+  System.out.print("Os números pares entre " + numero1 + " e " + numero2 + " são:");
+  scanner.close();  
+}
+}
+
+
+}
 
 
     
