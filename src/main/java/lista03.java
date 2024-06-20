@@ -11,7 +11,7 @@ int segundos = scanner.nextInt();
 
 if (segundos < 1 || segundos > 59) {
  System.out.println("Número inválido. Digite um valor de 1 a 59.");
-  
+  return;
  }
 
  Timer timer = new Timer();
@@ -29,7 +29,6 @@ if (segundos < 1 || segundos > 59) {
   }
  };
 timer.scheduleAtFixedRate(tarefa, 0, 1000);
-scanner.close();
  }
 
  public void ex02(){
@@ -50,8 +49,9 @@ scanner.close();
       scanner.close();  
     }
     }
-    
+  }  
 
 
-}
+
     
+
